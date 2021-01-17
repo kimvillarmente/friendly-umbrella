@@ -1,7 +1,4 @@
 import React from 'react';
+import { Button } from 'theme-ui';
 
-export const Button = () => {
-  return <button>
-    Hello
-  </button>;
-};
+export { Button };
