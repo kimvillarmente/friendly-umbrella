@@ -11,8 +11,8 @@ export const decorators = [
       theme={{
         colors: {
           text: '#000',
-          background: '#fff', // Canvas Background
-          primary: '#07c', // primary button color
+          background: '#fff',
+          primary: '#07c',
           secondary: '#05a',
           accent: '#609',
           muted: '#f6f6f6f',
