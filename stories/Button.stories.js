@@ -22,7 +22,7 @@ Primary.args = {
 export const Secondary = Template.bind({})
 Secondary.args = {
   color: 'white',
-  variant: 'secondary', // variant — button BG color
+  variant: 'secondary', // variant — button BG colo
   children: 'Click Here', // children — Button Text
   label: 'Secondary Button',
 }
@@ -39,8 +39,8 @@ Small.args = {
   label: 'Button',
 }
 
-export const Tiny = Template.bind({})
-Tiny.args = {
-  variant: 'tiny', // variant — button BG color
-  children: 'Button', // children — Button Text
-}
+// export const Tiny = Template.bind({})
+// Tiny.args = {
+//   variant: 'tiny', // variant — button BG color
+//   children: 'Button', // children — Button Text
+// }
