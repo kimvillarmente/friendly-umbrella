@@ -1,4 +1,4 @@
-import React from 'react';
-import { Button } from 'theme-ui';
+import React from 'react'
+import { Button } from 'theme-ui'
 
-export { Button };
+export { Button }

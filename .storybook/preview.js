@@ -7,6 +7,7 @@ import { ThemeProvider } from 'theme-ui'
 
 export const decorators = [
   (Story) => (
+    // THEME SPECIFICATION
     <ThemeProvider
       theme={{
         colors: {
