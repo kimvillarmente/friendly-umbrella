@@ -6,7 +6,26 @@ export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
+    label: {
+      control: 'text',
+    },
+    children: {
+      control: 'text',
+    },
+    variant: {
+      control: {
+        type: 'inline-radio',
+        options: ['primary', 'secondary'], // variant — button BG color
+      },
+    },
     backgroundColor: { control: 'color' }, // controls > backgroundColor name
+    color: { control: 'color' }, // controls > backgroundColor name
+    padding: {
+      control: { type: 'range', min: 0, max: 50, step: 1 },
+    },
+    margin: {
+      control: { type: 'range', min: 0, max: 8, step: 1 },
+    },
   },
 }
 
@@ -15,12 +34,13 @@ const Template = (args) => <Button {...args} />
 // Primary — List of Name under Example > Button
 export const Primary = Template.bind({})
 Primary.args = {
-  color: 'white',
-  variant: 'primary', // variant — button BG color
+  backgroundColor: 'Background Color',
+  color: 'Text Color',
+  variant: 'primary',
   children: 'Click Here', // children — Button Text
   label: 'Primary Button',
-  padding: '8px 16px',
-  margin: '0px',
+  padding: 12,
+  margin: 0,
 }
 
 export const Secondary = Template.bind({})
@@ -29,30 +49,6 @@ Secondary.args = {
   variant: 'secondary', // variant — button BG color
   children: 'Click Here', // children — Button Text
   label: 'Secondary Button',
-  padding: '8px 16px',
-  margin: '0px',
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  variant: {
-    preset: {
-      variant: 'primary',
-    },
-  },
-  sizes: 'large',
-  label: 'Large Button',
-  children: 'Click Here', // children — Button Text
-}
-
-export const Small = Template.bind({})
-Small.args = {
-  size: 'small',
-  label: 'Button',
-}
-
-export const Tiny = Template.bind({})
-Tiny.args = {
-  variant: 'tiny', // variant — button BG color
-  children: 'Button', // children — Button Text
+  padding: 10,
+  margin: 0,
 }
